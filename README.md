@@ -1,4 +1,7 @@
 # SQL Reference
+## by Shubhrendu Tripathi
+
+<br><br>
 
 ## mysql - whoami type command
 
@@ -106,6 +109,9 @@ MEDIUMINT	|   3   |   -8388608    |	0   |   8388607                 |	16777215  
 INT	        |   4   |   -2147483648 |   0   |   2147483647              |   4294967295              |      
 BIGINT	    |   8   |   -2<sup>63</sup>        |	0   |	2<sup>63</sup>-1	    |   2<sup>64</sup>-1        |
 
+### select all columns EXCEPT one column
+
+No native way of doing this in SQL.
 
 <br><br><br><br>
 
