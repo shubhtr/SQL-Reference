@@ -3,6 +3,30 @@
 
 <br><br>
 
+## TOP, LIMIT or ROWNUM Clause
+
+    SELECT column_name(s)
+    FROM table_name
+    WHERE condition
+    LIMIT number;
+
+    SELECT * FROM Customers
+    LIMIT 3;
+
+    SELECT * FROM Customers
+    WHERE ROWNUM <= 3;
+
+    SELECT * FROM Customers
+    WHERE Country='Germany'
+    LIMIT 3;
+
+## get data from multiple tables
+
+    SELECT      t1.*, t2.pathimg 
+    FROM        tblOne t1, tblTwo t2 
+    WHERE       t1.productid = 1 AND t1.imgseq = 1 AND t1.desc = 'a' 
+    ORDER       BY t1.seq;
+
 ## mysql - whoami type command
 
     SELECT CURRENT_USER();
@@ -287,3 +311,4 @@ Example
 * https://stackoverflow.com/questions/50056837/mysql-query-to-order-by-second-column-if-first-column-value-is-same
 * https://dev.mysql.com/doc/refman/8.0/en/sorting-rows.html
 * https://www.javatpoint.com/dbms-sql-command
+* https://www.w3schools.com/sql/
